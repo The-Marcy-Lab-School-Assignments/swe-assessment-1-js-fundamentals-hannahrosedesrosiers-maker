@@ -412,7 +412,7 @@ This function does not need to return anything.
 Examples:
 
 ```js
-petJudger('dog', 'frida'); // Prints "I love dogs! frida is so cute!"
+ // Prints "I love dogs! frida is so cute!"
 petJudger('panda', 'joe'); // Prints "What an...interesting pet."
 petJudger('panda'); // Prints "Missing information. Please provide a valid pet."
 ```
