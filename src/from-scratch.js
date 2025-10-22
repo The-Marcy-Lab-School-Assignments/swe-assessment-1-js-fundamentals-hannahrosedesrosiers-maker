@@ -18,13 +18,13 @@ const petJudger = (petBreed, petName) => {
     console.log('Missing information. Please provide a valid pet.')
 //check for any missing info first
   } else if (petBreed === "dog") {
-    console.log('I love dogs! ${petName} is so cute!')
+    console.log(`I love dogs! ${petName} is so cute!`)
   } else if (petBreed === "cat") {
-    console.log('I love cats! ${petName} is so cute!')
+    console.log(`I love cats! ${petName} is so cute!`)
   } else if (petBreed === "turtle") {
-    console.log("Who doesn't love a good turtle? ${petName} is the tops.")
+    console.log(`Who doesn't love a good turtle? ${petName} is the tops.`)
   } else if (petBreed === "snake") {
-    console.log('Not a fan, please take ${petName} and leave.')
+    console.log(`Not a fan, please take ${petName} and leave.`)
   } else {
   //if anything else is put as petBreed 
     console.log('What an...interesting pet.')
@@ -88,14 +88,14 @@ const letterCaseCounts = (str) => {
       counts.lowercase++
 // increase(increment) lowercase count by 1
     }
-    else if (char >= 'A' && char <= 'Z') {
+  else if (char >= 'A' && char <= 'Z') {
     // if character is between A and Z inclusive and upperercase
       counts.uppercase++
 // increase(increment) uppercase count by 1
     }
     else {
       counts.neither++
-// If its not lowercase or uppercase its neither like a space or special charcter or number so add 1 to neither
+// not lowercase or uppercase its neither ex: space,special charcter,number. add 1 to neither
     }
   }
   return counts;
